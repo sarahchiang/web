@@ -1,0 +1,1225 @@
+doctype html
+html(lang='en')
+  head
+    // Icon Tags start
+    link(rel='apple-touch-icon', sizes='57x57', href='assets/img/icon/apple-icon-57x57.png')
+    link(rel='apple-touch-icon', sizes='60x60', href='assets/img/icon/apple-icon-60x60.png')
+    link(rel='apple-touch-icon', sizes='72x72', href='assets/img/icon/apple-icon-72x72.png')
+    link(rel='apple-touch-icon', sizes='76x76', href='assets/img/icon/apple-icon-76x76.png')
+    link(rel='apple-touch-icon', sizes='114x114', href='assets/img/icon/apple-icon-114x114.png')
+    link(rel='apple-touch-icon', sizes='120x120', href='assets/img/icon/apple-icon-120x120.png')
+    link(rel='apple-touch-icon', sizes='144x144', href='assets/img/icon/apple-icon-144x144.png')
+    link(rel='apple-touch-icon', sizes='152x152', href='assets/img/icon/apple-icon-152x152.png')
+    link(rel='apple-touch-icon', sizes='180x180', href='assets/img/icon/apple-icon-180x180.png')
+    link(rel='icon', type='image/png', sizes='192x192', href='assets/img/icon/android-icon-192x192.png')
+    link(rel='icon', type='image/png', sizes='32x32', href='assets/img/icon/favicon-32x32.png')
+    link(rel='icon', type='image/png', sizes='96x96', href='assets/img/icon/favicon-96x96.png')
+    link(rel='icon', type='image/png', sizes='16x16', href='assets/img/icon/favicon-16x16.png')
+    link(rel='manifest', href='/manifest.json')
+    meta(name='msapplication-TileColor', content='#ffffff')
+    meta(name='msapplication-TileImage', content='/ms-icon-144x144.png')
+    meta(name='theme-color', content='#ffffff')
+    // Icon Tags end
+    meta(charset='utf-8')
+    // Viewport Meta Tag
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title
+      | Animal Shelter
+    // Bootstrap
+    link(rel='stylesheet', type='text/css', href='assets/css/bootstrap.min.css')
+    // Main Style
+    link(rel='stylesheet', type='text/css', href='assets/css/main.css')
+    // Slicknav Css
+    link(rel='stylesheet', type='text/css', href='assets/css/slicknav.css')
+    // Responsive Style
+    link(rel='stylesheet', type='text/css', href='assets/css/responsive.css')
+    // Fonts
+    link(rel='stylesheet', media='screen', href='assets/fonts/font-awesome/font-awesome.min.css')
+    link(rel='stylesheet', media='screen', href='assets/fonts/simple-line-icons.css')
+    // Extras
+    link(rel='stylesheet', type='text/css', href='assets/extras/owl/owl.carousel.css')
+    link(rel='stylesheet', type='text/css', href='assets/extras/owl/owl.theme.css')
+    link(rel='stylesheet', type='text/css', href='assets/extras/animate.css')
+    link(rel='stylesheet', type='text/css', href='assets/extras/normalize.css')
+    // Color CSS Styles
+    link(rel='stylesheet', type='text/css', href='assets/css/colors/green.css', media='screen')
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+  body
+    // Header area wrapper starts
+    header#header-wrap
+      // Navbar Starts
+      nav.navbar.navbar-expand-md.fixed-top.scrolling-navbar.nav-bg
+        .container
+          // Brand and toggle get grouped for better mobile display
+          .navbar-header
+            a.navbar-brand(href='index.html')
+              img(src='assets/img/logo.png', alt='')
+            button.navbar-toggler(type='button', data-toggle='collapse', data-target='#main-menu', aria-controls='main-menu', aria-expanded='false', aria-label='Toggle navigation')
+              span.navbar-toggler-icon
+          #main-menu.collapse.navbar-collapse
+            ul.navbar-nav.mr-auto.w-100.justify-content-end
+              li.nav-item.dropdown
+                a.nav-link.dropdown-toggle.active(href='index.html', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                  | 首頁
+              li.nav-item.dropdown
+                a.nav-link.dropdown-toggle(href='#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') 最新消息
+                .dropdown-menu
+                  a.dropdown-item(href='about-us.html') 認養活動
+                  a.dropdown-item(href='about-us2.html') 寵物保健
+                  a.dropdown-item(href='team-page.html') 演講座談
+              li.nav-item.dropdown
+                a.nav-link.dropdown-toggle(href='#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') 寵物市集
+                .dropdown-menu
+                  a.dropdown-item(href='portfolio-col-2.html') 新品上市
+                  a.dropdown-item(href='portfolio-col-3.html') 好康優惠
+                  a.dropdown-item(href='portfolio-col-4.html') 寵物飲食
+                  a.dropdown-item(href='portfolio-col-5.html') 寵物用品
+              li.nav-item.dropdown
+                a.nav-link.dropdown-toggle(href='#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') 寵物旅店
+                .dropdown-menu
+                  a.dropdown-item(href='accordions.html') 旅店簡介
+                  a.dropdown-item(href='tabs.html') 房型價格
+                  a.dropdown-item(href='buttons.html') 特色設備
+                  a.dropdown-item(href='skills.html') 線上訂房
+              li.nav-item.dropdown
+                a.nav-link.dropdown-toggle(href='#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') 寵物醫院
+                .dropdown-menu
+                  a.dropdown-item(href='about-us3.html') 各區醫院
+                  a.dropdown-item(href='about-us4.html') 線上掛號
+                  a.dropdown-item(href='about-us5.html') 看診進度查詢
+              li.nav-item.dropdown
+                a.nav-link.dropdown-toggle(href='#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') 部落格分享
+                .dropdown-menu
+                  a.dropdown-item(href='sidebar-right.html') 本周最新
+                  a.dropdown-item(href='sidebar-left.html') 熱門文章
+                  a.dropdown-item(href='sidebar-full.html') 精選圖文
+              li.nav-item.dropdown
+                a.nav-link.dropdown-toggle(href='#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') 會員登入/註冊
+            form.form-inline
+              .top_search_con
+                input.mr-sm-2(type='text', placeholder='站內搜尋 ...')
+                span.top_search_icon
+                  i.icon-magnifier
+          // Mobile Menu Start
+          ul.wpb-mobile-menu
+            li
+              a.active(href='index.html') 首頁
+            li
+              a(href='#') 最新消息
+              ul
+                li
+                  a(href='about-us.html') 認養活動
+                li
+                  a(href='about-us2.html') 寵物保健
+                li
+                  a(href='team-page.html') 演講座談
+            li
+              a(href='#') 寵物市集
+              ul
+                li
+                  a(href='portfolio-col-2.html') 新品上市
+                li
+                  a(href='portfolio-col-3.html') 好康優惠
+                li
+                  a(href='portfolio-col-4.html') 寵物飲食
+                li
+                  a(href='porfolio-item.html') 寵物用品
+            li
+              a(href='#') 寵物旅店
+              ul
+                li
+                  a(href='accordions.html') 旅店簡介
+                li
+                  a(href='tabs.html') 房型價格
+                li
+                  a(href='buttons.html') 特色設備
+                li
+                  a(href='skills.html') 線上訂房
+            li
+              a(href='#') 寵物醫院
+              ul
+                li
+                  a(href='about-us.html') 各區醫院
+                li
+                  a(href='about-us2.html') 線上掛號
+                li
+                  a(href='team-page.html') 看診進度查詢
+            li
+              a(href='#') 部落格分享
+              ul
+                li
+                  a(href='sidebar-right.html') 本周最新
+                li
+                  a(href='sidebar-left.html') 熱門文章
+                li
+                  a(href='sidebar-full.html') 精選圖文
+            li
+              a(href='#') 會員登入/註冊
+          // Mobile Menu End
+      // Navbar ends
+      // Main Carousel Section
+      #carousel-area
+        #carousel-slider.carousel.slide(data-ride='carousel')
+          ol.carousel-indicators
+            li.active(data-target='#carousel-slider', data-slide-to='0')
+            li(data-target='#carousel-slider', data-slide-to='1')
+            li(data-target='#carousel-slider', data-slide-to='2')
+            li(data-target='#carousel-slider', data-slide-to='3')
+          .carousel-inner
+            .carousel-item.active
+              img.d-block.w-100(src='assets/img/slider/bg-dog1-gray.jpg', alt='')
+              .carousel-caption
+                h2.fadeInUp.wow(data-sppb-wow-delay='0.8s')
+                  | 請用領養代替購買
+                h3.fadeInUp.wow(data-sppb-wow-delay='1.2s') 愛護動物，從你我開始
+                a.btn.btn-lg.btn-common.fadeInUp.wow(data-sppb-wow-delay='1.4s', href='#')
+                  i.fa.fa-download
+                  |                 點擊認養
+            .carousel-item
+              img.d-block.w-100(src='assets/img/slider/bg-cat1-gray.jpg', alt='')
+              .carousel-caption
+                h2.fadeInUp.wow(data-sppb-wow-delay='0.8s')
+                  | Multi-purpose Template
+                h3.fadeInUp.wow(data-sppb-wow-delay='1.2s')
+                  | At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                a.btn.btn-lg.btn-common.fadeInUp.wow(data-sppb-wow-delay='1.4s', href='#')
+                  i.fa.fa-coffee
+                  |                 Learn More
+            .carousel-item
+              img.d-block.w-100(src='assets/img/slider/bg-dog2-gray.jpg', alt='')
+              .carousel-caption
+                h2.fadeInUp.wow(data-sppb-wow-delay='0.8s')
+                  | Refreshing Cool Design
+                h3.fadeInUp.wow(data-sppb-wow-delay='1.2s')
+                  | At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                a.btn.btn-lg.btn-common.fadeInUp.wow(data-sppb-wow-delay='1.4s', href='#')
+                  i.fa.fa-download
+                  |                 Download
+            .carousel-item
+              img.d-block.w-100(src='assets/img/slider/bg-rabbit1-gray.jpg', alt='')
+              .carousel-caption
+                h2.fadeInUp.wow(data-sppb-wow-delay='0.8s')
+                  | Refreshing Cool Design
+                h3.fadeInUp.wow(data-sppb-wow-delay='1.2s')
+                  | At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                a.btn.btn-lg.btn-common.fadeInUp.wow(data-sppb-wow-delay='1.4s', href='#')
+                  i.fa.fa-download
+                  |                 Download
+          a.carousel-control-prev(href='#carousel-slider', role='button', data-slide='prev')
+            span.carousel-control.carousel-control-prev-icon(aria-hidden='true')
+            span.sr-only Previous
+          a.carousel-control-next(href='#carousel-slider', role='button', data-slide='next')
+            span.carousel-control.carousel-control-next-icon(aria-hidden='true')
+            span.sr-only Next
+    // Header-wrap Section End
+    // Service Block-1 Section
+    section#service-block-main.section
+      // Container Starts
+      .container
+        h1.section-title.wow.fadeIn.animated(data-wow-delay='.2s')
+          | 待領養專區
+        .row
+          .col-md-4
+            .card.mb-4.box-shadow
+              img.card-img-top(src='assets/img/adopt/cats/ad-cat1.jpg', 100px='', alt='待領養小貓')
+              .card-body
+                p.card-text
+                  | This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                .d-flex.justify-content-between.align-items-center
+                  .btn-group
+                    button.btn.btn-common.btn-sm.mt-20(type='button') 預覽
+                    button.btn.btn-common.btn-sm.mt-20(type='button') 認養
+                  small.text-muted 9 mins
+          .col-md-4
+            .card.mb-4.box-shadow
+              img.card-img-top(src='assets/img/adopt/cats/ad-cat2.jpg', 100px='', alt='待領養小貓')
+              .card-body
+                p.card-text
+                  | This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                .d-flex.justify-content-between.align-items-center
+                  .btn-group
+                    button.btn.btn-sm.btn-outline-secondary(type='button') 預覽
+                    button.btn.btn-sm.btn-outline-secondary(type='button') 認養
+                  small.text-muted 9 mins
+          .col-md-4
+            .card.mb-4.box-shadow
+              img.card-img-top(src='assets/img/adopt/cats/ad-cat3.jpg', 100px='', alt='待領養小貓')
+              .card-body
+                p.card-text
+                  | This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                .d-flex.justify-content-between.align-items-center
+                  .btn-group
+                    button.btn.btn-sm.btn-outline-secondary(type='button') 預覽
+                    button.btn.btn-sm.btn-outline-secondary(type='button') 認養
+                  small.text-muted 9 mins
+          .col-md-4
+            .card.mb-4.box-shadow
+              img.card-img-top(src='assets/img/adopt/dogs/ad-dog1.jpg', alt='待領養小狗')
+              .card-body
+                p.card-text
+                  | This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                .d-flex.justify-content-between.align-items-center
+                  .btn-group
+                    button.btn.btn-sm.btn-outline-secondary(type='button') 預覽
+                    button.btn.btn-sm.btn-outline-secondary(type='button') 認養
+                  small.text-muted 9 mins
+          .col-md-4
+            .card.mb-4.box-shadow
+              img.card-img-top(src='assets/img/adopt/dogs/ad-dog2.jpg', alt='待領養小狗')
+              .card-body
+                p.card-text
+                  | This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                .d-flex.justify-content-between.align-items-center
+                  .btn-group
+                    button.btn.btn-sm.btn-outline-secondary(type='button') 預覽
+                    button.btn.btn-sm.btn-outline-secondary(type='button') 認養
+                  small.text-muted 9 mins
+          .col-md-4
+            .card.mb-4.box-shadow
+              img.card-img-top(src='assets/img/adopt/dogs/ad-dog3.jpg', alt='待領養小狗')
+              .card-body
+                p.card-text
+                  | This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                .d-flex.justify-content-between.align-items-center
+                  .btn-group
+                    button.btn.btn-sm.btn-outline-secondary(type='button') 預覽
+                    button.btn.btn-sm.btn-outline-secondary(type='button') 認養
+                  small.text-muted 9 mins
+          // Service-Block-1 Item Ends
+      // Container Ends
+    // Service Main Section Ends
+    // About Us Section Start
+    section.split.section
+      // Container Starts
+      .container
+        .row
+          .col-md-4.col-sm-6.col-xs-12
+            .images
+              img(src='assets/img/about/plain-why-choose-us-2.png', alt='')
+          .col-md-8.col-sm-6.col-xs-12
+            .content-inner
+              h2.title Built-With Bootstrap4, A New Exprience
+              p.lead
+                | We Crafted an awesome design library that is robust and intuitive to use. No matter you're building a business
+                | presentation websit or a complex web application our design blocks can easily be adapted for your needs.
+              .details-list
+                .row
+                  .col-sm-6.col-xs-12
+                    h3 Minimal Coding
+                    p
+                      | The design blocks come with ready to use HTML colde which makes the design kit suitable for developers
+                      | and designers of all skill levels.
+                  .col-sm-6.col-xs-12
+                    h3 Responsive
+                    p
+                      | Your website will look good on any device. Each design block has been individually tested on desktop. tablets
+                      | and smartphones.
+      // Container Ends
+    // About Us Section Ends
+    // Other Services Section
+    section#other-services.section
+      .container
+        h1.section-title.wow.fadeInUpQuick
+          | Our Services
+        p.section-subcontent
+          | At vero eos et accusamus et iusto odio dignissimos ducimus qui
+          br
+          |  blanditiis praesentium
+        .row
+          // Other Service Item Wrapper Starts
+          .col-sm-6.col-md-6
+            ul#myTab.nav.nav-tabs(role='tablist')
+              li.nav-item
+                a.nav-link.active(data-toggle='tab', href='#home', role='tab', aria-controls='home')
+                  i.icon-screen-desktop
+              li.nav-item
+                a.nav-link(data-toggle='tab', href='#profile', role='tab', aria-controls='profile')
+                  i.icon-settings
+              li.nav-item
+                a.nav-link(data-toggle='tab', href='#messages', role='tab', aria-controls='messages')
+                  i.icon-heart
+              li.nav-item
+                a.nav-link(data-toggle='tab', href='#settings', role='tab', aria-controls='settings')
+                  i.icon-layers
+            .tab-content
+              #home.tab-pane.active(role='tabpanel')
+                .service-content
+                  h3 Responsive Design
+                  p.lead
+                    | At vero eos et accusamus et
+                    a(href='#') iusto
+                    |  odio digniss-
+                    br
+                    |  imos
+                    b ducimus
+                    |  qui blanditiis praesentium voluptatum deleniti
+                  p
+                    | quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa
+                    | qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+              #profile.tab-pane(role='tabpanel')
+                .service-content
+                  h3 Very useful custom widget 
+                  p.lead
+                    | At vero eos et accusamus et
+                    a(href='#') iusto
+                    |  odio digniss-
+                    br
+                    |  imos
+                    b ducimus
+                    |  qui blanditiis praesentium voluptatum deleniti
+                  p
+                    | quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa
+                    | qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+              #messages.tab-pane(role='tabpanel')
+                .service-content
+                  h3 Graphic Design
+                  p.lead
+                    | At vero eos et accusamus et
+                    a(href='#') iusto
+                    |  odio digniss-
+                    br
+                    |  imos
+                    b ducimus
+                    |  qui blanditiis praesentium voluptatum deleniti
+                  p
+                    | quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa
+                    | qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+              #settings.tab-pane(role='tabpanel')
+                .service-content
+                  h3 Parallax Background
+                  p.lead
+                    | At vero eos et accusamus et
+                    a(href='#') iusto
+                    |  odio digniss-
+                    br
+                    |  imos
+                    b ducimus
+                    |  qui blanditiis praesentium voluptatum deleniti
+                  p
+                    | quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa
+                    | qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+          // Other Service Item Wrapper Ends
+          // Porgress Strts
+          .col-sm-6.com-md-6
+            .skill-shortcode
+              .skill
+                p
+                  | Web Design 91%
+                .progress
+                  .progress-bar(role='progressbar', data-percentage='91')
+                    span.sr-only
+                      | 91% Complete
+              .skill
+                p
+                  | HTML/CSS 86%
+                .progress
+                  .progress-bar(role='progressbar', data-percentage='86')
+                    span.sr-only
+                      | 86% Complete
+              .skill
+                p
+                  | Graphic Design 78%
+                .progress
+                  .progress-bar(role='progressbar', data-percentage='78')
+                    span.sr-only
+                      | 60% Complete
+              .skill
+                p
+                  | WordPress 65%
+                .progress
+                  .progress-bar(role='progressbar', data-percentage='65')
+                    span.sr-only
+                      | 60% Complete
+          // Other Service Image Ends
+      // Container Ends
+    // Other Services Section End
+    // Portfolio Section
+    section#portfolios.section
+      // Container Starts
+      .container
+        h1.section-title.wow.fadeInUpQuick(data-wow-delay='.3s')
+          | 寵物市集
+        p.section-subcontent.wow.fadeInUpQuick(data-wow-delay='.4s')
+          | At vero eos et accusamus et iusto odio dignissimos ducimus qui
+          br
+          |  blanditiis praesentium
+        .row
+          .col-md-12
+            // Portfolio Controller/Buttons
+            .controls.text-center
+              a.filter.active.btn.btn-common(data-filter='all')
+                | All
+              a.filter.btn.btn-common(data-filter='.branding')
+                | Branding
+              a.filter.btn.btn-common(data-filter='.marketing')
+                | Marketing
+              a.filter.btn.btn-common(data-filter='.planning')
+                | Planning
+              a.filter.btn.btn-common(data-filter='.research')
+                | Research
+            // Portfolio Controller/Buttons Ends
+          // Portfolio Recent Projects
+          #portfolio.row
+            .col-sm-6.col-md-4.col-lg-4.col-xl-4.mix.marketing.planning
+              .portfolio-item
+                .portfolio-img
+                  img(src='assets/img/portfolio/img1.jpg', alt='')
+                .portfoli-content
+                  .sup-desc-wrap
+                    .sup-desc-inner
+                      .sup-link
+                        a.left-link(href='#')
+                          i.icon-link
+                        a.right-link(href='#')
+                          i.icon-heart
+                      .sup-meta-wrap
+                        a.sup-title(href='#')
+                          h4 TITLE HERE
+                        p.sup-description
+                          | At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+            .col-sm-6.col-md-4.col-lg-4.col-xl-4.mix.branding.planning
+              .portfolio-item
+                .portfolio-img
+                  img(src='assets/img/portfolio/img2.jpg', alt='')
+                .portfoli-content
+                  .sup-desc-wrap
+                    .sup-desc-inner
+                      .sup-link
+                        a.left-link(href='#')
+                          i.icon-link
+                        a.right-link(href='#')
+                          i.icon-heart
+                      .sup-meta-wrap
+                        a.sup-title(href='#')
+                          h4 TITLE HERE
+                        p.sup-description
+                          | At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+            .col-sm-6.col-md-4.col-lg-4.col-xl-4.mix.branding.research
+              .portfolio-item
+                .portfolio-img
+                  img(src='assets/img/portfolio/img3.jpg', alt='')
+                .portfoli-content
+                  .sup-desc-wrap
+                    .sup-desc-inner
+                      .sup-link
+                        a.left-link(href='#')
+                          i.icon-link
+                        a.right-link(href='#')
+                          i.icon-heart
+                      .sup-meta-wrap
+                        a.sup-title(href='#')
+                          h4 TITLE HERE
+                        p.sup-description
+                          | At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+            .col-sm-6.col-md-4.col-lg-4.col-xl-4.mix.marketing.research
+              .portfolio-item
+                .portfolio-img
+                  img(src='assets/img/portfolio/img4.jpg', alt='')
+                .portfoli-content
+                  .sup-desc-wrap
+                    .sup-desc-inner
+                      .sup-link
+                        a.left-link(href='#')
+                          i.icon-link
+                        a.right-link(href='#')
+                          i.icon-heart
+                      .sup-meta-wrap
+                        a.sup-title(href='#')
+                          h4 TITLE HERE
+                        p.sup-description
+                          | At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+            .col-sm-6.col-md-4.col-lg-4.col-xl-4.mix.marketing.planning
+              .portfolio-item
+                .portfolio-img
+                  img(src='assets/img/portfolio/img5.jpg', alt='')
+                .portfoli-content
+                  .sup-desc-wrap
+                    .sup-desc-inner
+                      .sup-link
+                        a.left-link(href='#')
+                          i.icon-link
+                        a.right-link(href='#')
+                          i.icon-heart
+                      .sup-meta-wrap
+                        a.sup-title(href='#')
+                          h4 TITLE HERE
+                        p.sup-description
+                          | At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+            .col-sm-6.col-md-4.col-lg-4.col-xl-4.mix.planning.research
+              .portfolio-item
+                .portfolio-img
+                  img(src='assets/img/portfolio/img6.jpg', alt='')
+                .portfoli-content
+                  .sup-desc-wrap
+                    .sup-desc-inner
+                      .sup-link
+                        a.left-link(href='#')
+                          i.icon-link
+                        a.right-link(href='#')
+                          i.icon-heart
+                      .sup-meta-wrap
+                        a.sup-title(href='#')
+                          h4 TITLE HERE
+                        p.sup-description
+                          | At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+          .col-md-12
+            // End Portfolio Recent Projects
+            .text-center.loadmore-button.wow.fadeInUpQuick(data-wow-delay='.6s')
+              a.btn.btn-common(href='#')
+                i.fa.fa-arrows
+                |  Show More
+      // Container Ends
+    // Portfolio Section Ends
+    // Featured Section Starts
+    section#featured.section
+      // Container Starts
+      .container
+        h1.section-title.wow.fadeInUpQuick
+          | Core Features
+        p.section-subcontent
+          | At vero eos et accusamus et iusto odio dignissimos ducimus qui
+          br
+          |  blanditiis praesentium
+        .row
+          // Start Service Icon 1
+          .col-md-4.col-sm-6.wow.fadeInUpQuick(data-wow-delay='.2s', data-animation='fadeIn', data-animation-delay='01')
+            .featured-box
+              .featured-icon
+                i.icon-present
+              .featured-content
+                h4
+                  | Tons of shortcodes
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua.
+          // End featured Icon 1
+          // Start featured Icon 1
+          .col-md-4.col-sm-6.wow.fadeInUpQuick(data-wow-delay='.4s', data-animation='fadeIn', data-animation-delay='01')
+            .featured-box
+              .featured-icon
+                i.icon-rocket
+              .featured-content
+                h4
+                  | Endless posibilites
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua.
+          // End featured Icon 1
+          // Start featured Icon 1
+          .col-md-4.col-sm-6.wow.fadeInUpQuick(data-wow-delay='.6s', data-animation='fadeIn', data-animation-delay='01')
+            .featured-box
+              .featured-icon
+                i.icon-pencil
+              .featured-content
+                h4
+                  | 24/7 Support
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua.
+          // End featured Icon 1
+          // Start featured Icon 1
+          .col-md-4.col-sm-6.wow.fadeInUpQuick(data-wow-delay='.8s', data-animation='fadeIn', data-animation-delay='01')
+            .featured-box
+              .featured-icon
+                i.icon-diamond.icon-large.icon-effect
+              .featured-content
+                h4
+                  | Great Ideas
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua.
+          // End featured Icon 1
+          // Start featured Icon 1
+          .col-md-4.col-sm-6.wow.fadeInUpQuick(data-wow-delay='1s', data-animation='fadeIn', data-animation-delay='01')
+            .featured-box
+              .featured-icon
+                i.icon-settings
+              .featured-content
+                h4
+                  | Perfect Coding
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua.
+          // End featured Icon 1
+          // Start featured Icon 1
+          .col-md-4.col-sm-6.wow.fadeInUpQuick(data-wow-delay='1.2s', data-animation='fadeIn', data-animation-delay='01')
+            .featured-box
+              .featured-icon
+                i.icon-star
+              .featured-content
+                h4
+                  | Unique Design
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua.
+          // End featured Icon 1
+      // Container Ends
+    // Featured Section Ends
+    // Pricing Table Section
+    section#pricing.section
+      .container
+        h1.section-title.wow.fadeInUpQuick(data-wow-delay='.2s')
+          | Our Pricing
+        p.section-subcontent.wow.fadeInUpQuick(data-wow-delay='.3s')
+          | At vero eos et accusamus et iusto odio dignissimos ducimus qui
+          br
+          |  blanditiis praesentium
+        .row
+          .col-md-4
+            .pricing-table.pricing-table-x
+              .table-header
+                h3
+                  | Single Website
+              .plan
+                h3.price
+                  | $49
+              .plan-info
+                p
+                  i.fa.fa-check
+                  |                 1 domains
+                p
+                  i.fa.fa-check
+                  |                 1 developer
+                p
+                  i.fa.fa-check
+                  |                 Minified source code
+                p
+                  i.fa.fa-check
+                  |                 Free updates forever
+                .button-area
+                  a.btn.btn-common(href='#')
+                    | Get Started
+          .col-md-4
+            .pricing-table.pricing-table-x
+              .table-header.highlight
+                h3
+                  | Developer
+              .plan
+                h3.price
+                  | $79
+              .plan-info
+                p
+                  i.fa.fa-check
+                  |                 Unlimited domains
+                p
+                  i.fa.fa-check
+                  |                 1 developer
+                p
+                  i.fa.fa-check
+                  |                 Unlimited source code
+                p
+                  i.fa.fa-check
+                  |                 Free updates forever
+                .button-area
+                  a.btn.btn-common(href='#')
+                    | Buy Now
+          .col-md-4.wow
+            .pricing-table.pricing-table-x
+              .table-header
+                h3
+                  | Business
+              .plan
+                h3.price
+                  | $159
+              .plan-info
+                p
+                  i.fa.fa-check
+                  |                 Unlimited domains
+                p
+                  i.fa.fa-check
+                  |                 Unlimited developer
+                p
+                  i.fa.fa-check
+                  |                 Unlimited source code
+                p
+                  i.fa.fa-check
+                  |                 Free updates forever
+                .button-area
+                  a.btn.btn-common(href='#')
+                    | Buy Now
+    // Pricing Table  End
+    // Team Section
+    section#team.section
+      // Container Starts
+      .container
+        h1.section-title.wow.fadeInUpQuick
+          | Meet Our Team
+        p.section-subcontent
+          | At vero eos et accusamus et iusto odio dignissimos ducimus qui
+          br
+          |  blanditiis praesentium
+        // Row Starts
+        .row
+          .col-sm-6.col-md-3
+            // Team Item Starts
+            .team-item.wow.fadeInUpQuick(data-wow-delay='1s')
+              figure.team-profile
+                img(src='assets/img/team/team-01.jpg', alt='')
+                figcaption.our-team
+                  .details
+                    p.content-white Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    .orange-line
+                    .social
+                      a.facebook(href='http://www.facebook.com')
+                        i.fa.fa-facebook
+                      a.twitter(href='http://www.twitter.com')
+                        i.fa.fa-twitter
+                      a.google-plus(href='http://plus.google.com')
+                        i.fa.fa-google-plus
+              .info
+                h2
+                  | Sara smith
+                .orange-line
+                p
+                  | Founder And ceo
+            // Team Item Ends
+          .col-sm-6.col-md-3
+            // Team Item Starts
+            .team-item.wow.fadeInUpQuick(data-wow-delay='1.4s')
+              figure.team-profile
+                img(src='assets/img/team/team-02.jpg', alt='')
+                figcaption.our-team
+                  .details
+                    p.content-white Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    .orange-line
+                    .social
+                      a.facebook(href='http://www.facebook.com')
+                        i.fa.fa-facebook
+                      a.twitter(href='http://www.twitter.com')
+                        i.fa.fa-twitter
+                      a.google-plus(href='http://plus.google.com')
+                        i.fa.fa-google-plus
+              .info
+                h2
+                  | Sommer Christian
+                .orange-line
+                p
+                  | creative studio head
+            // Team Item Starts
+          .col-sm-6.col-md-3
+            // Team Item Starts
+            .team-item.wow.fadeInUpQuick(data-wow-delay='1.8s')
+              figure.team-profile
+                img(src='assets/img/team/team-03.jpg', alt='')
+                figcaption.our-team
+                  .details
+                    p.content-white Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    .orange-line
+                    .social
+                      a.facebook(href='http://www.facebook.com')
+                        i.fa.fa-facebook
+                      a.twitter(href='http://www.twitter.com')
+                        i.fa.fa-twitter
+                      a.google-plus(href='http://plus.google.com')
+                        i.fa.fa-google-plus
+              .info
+                h2
+                  | Jane lupkin
+                .orange-line
+                p
+                  | magento developer
+            // Team Item Ends
+          .col-sm-6.col-md-3
+            // Team Item Starts
+            .team-item.wow.fadeInUpQuick(data-wow-delay='2.2s')
+              figure.team-profile
+                img(src='assets/img/team/team-04.jpg', alt='')
+                figcaption.our-team
+                  .details
+                    p.content-white Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    .orange-line
+                    .social
+                      a.facebook(href='http://www.facebook.com')
+                        i.fa.fa-facebook
+                      a.twitter(href='http://www.twitter.com')
+                        i.fa.fa-twitter
+                      a.google-plus(href='http://plus.google.com')
+                        i.fa.fa-google-plus
+              .info
+                h2
+                  | Sebastian roll
+                .orange-line
+                p
+                  | Logo / branding designer
+            // Team Item Ends
+        // Row Ends
+      // Container Ends
+    // Team Section End
+    // Cool Facts Section
+    section#cool-facts.section
+      // Container Starts
+      .container
+        // Row Starts
+        .row
+          .col-sm-6.col-md-3.col-lg-3
+            // Fact Block Starts
+            .fact-block.clearfix.wow.fadeInUp(data-wow-delay='0.3s')
+              .facts-item
+                i.icon-trophy
+                .fact-count
+                  h3
+                    span.counter 40
+                    | +
+                  h4 Awards won
+            // Fact Block Ends
+          .col-sm-6.col-md-3.col-lg-3
+            // Fact Block Starts
+            .fact-block.clearfix.wow.fadeInUp(data-wow-delay='0.6s')
+              .facts-item
+                i.icon-heart
+                .fact-count
+                  h3
+                    span.counter 300
+                    | +
+                  h4 Happy clients
+            // Fact Block Ends
+          .col-sm-6.col-md-3.col-lg-3
+            // Fact Block Starts
+            .fact-block.clearfix.wow.fadeInUp(data-wow-delay='0.9s')
+              .facts-item
+                i.icon-ghost
+                .fact-count
+                  h3
+                    span.counter 200
+                    | +
+                  h4 Fun Facts
+            // Fact Block Ends
+          .col-sm-6.col-md-3.col-lg-3
+            // Fact Block Starts
+            .fact-block.clearfix.wow.fadeInUp(data-wow-delay='1.2s')
+              .facts-item
+                i.icon-picture
+                .fact-count
+                  h3
+                    span.counter 1700
+                    | +
+                  h4 Exhibitions
+            // Fact Block Ends
+        // Row Ends
+      // Container Ends
+    // Cool Facts Section End
+    // Testimonial Section
+    section#testimonial.section
+      // Container Starts
+      .container
+        .row
+          .col-sm-12
+            #testimonial-item.owl-carousel
+              .item
+                .testimonial-inner
+                  .testimonial-images
+                    img.img-circle(src='assets/img/testimonial/img1.jpg', alt='')
+                    h4
+                      | Steve Austin
+                      span
+                        a(href='#') envato.com 
+                  .rating-star
+                    i.fa.fa-star
+                    i.fa.fa-star
+                    i.fa.fa-star
+                    i.fa.fa-star
+                    i.fa.fa-star-o
+                  p
+                    | Quisque mollis lacus augue, a hendrerit leo tristique vitae. Mauris non ipsum molestie sagittis elit ac vulputate odio.
+              .item
+                .testimonial-inner
+                  .testimonial-images
+                    img.img-circle(src='assets/img/testimonial/img2.jpg', alt='')
+                    h4
+                      | Chelsey Siltanen
+                      span
+                        a(href='#') Microsoft
+                  .rating-star
+                    i.fa.fa-star
+                    i.fa.fa-star
+                    i.fa.fa-star
+                    i.fa.fa-star-o
+                    i.fa.fa-star-o
+                  p
+                    | Quisque mollis lacus augue, a hendrerit leo tristique vitae. Mauris non ipsum molestie sagittis elit ac vulputate odio.
+              .item
+                .testimonial-inner
+                  .testimonial-images
+                    img.img-circle(src='assets/img/testimonial/img3.jpg', alt='')
+                    h4
+                      | Pamela Fox
+                      span
+                        a(href='#') Khan Academy
+                  .rating-star
+                    i.fa.fa-star
+                    i.fa.fa-star
+                    i.fa.fa-star
+                    i.fa.fa-star-o
+                    i.fa.fa-star-o
+                  p
+                    | Quisque mollis lacus augue, a hendrerit leo tristique vitae. Mauris non ipsum molestie sagittis elit ac vulputate odio.
+              .item
+                .testimonial-inner
+                  .testimonial-images
+                    img.img-circle(src='assets/img/testimonial/img4.jpg', alt='')
+                    h4
+                      | janna Hagan
+                      span
+                        a(href='#') Google
+                  .rating-star
+                    i.fa.fa-star
+                    i.fa.fa-star
+                    i.fa.fa-star
+                    i.fa.fa-star-o
+                    i.fa.fa-star-o
+                  p
+                    | Quisque mollis lacus augue, a hendrerit leo tristique vitae. Mauris non ipsum molestie sagittis elit ac vulputate odio.
+              .item
+                .testimonial-inner
+                  .testimonial-images
+                    img.img-circle(src='assets/img/testimonial/img5.jpg', alt='')
+                    h4
+                      | Paul Tweedy
+                      span
+                        a(href='#') BBC
+                  .rating-star
+                    i.fa.fa-star
+                    i.fa.fa-star
+                    i.fa.fa-star
+                    i.fa.fa-star-o
+                    i.fa.fa-star-o
+                  p
+                    | Quisque mollis lacus augue, a hendrerit leo tristique vitae. Mauris non ipsum molestie sagittis elit ac vulputate odio.
+      // Container Ends
+    // Testimonial Section End
+    // Blog Section
+    section#blog.section
+      // Container Starts
+      .container
+        h1.section-title.wow.fadeInUpQuick
+          | The Blog
+        p.section-subcontent
+          | At vero eos et accusamus et iusto odio dignissimos ducimus qui
+          br
+          |  blanditiis praesentium
+        // Row Starts
+        .row
+          .col-lg-4.col-md-4.col-sm-12.col-xs-12
+            // Blog Item Starts
+            .blog-item-wrapper
+              .blog-item-img
+                a(href='#')
+                  img(src='assets/img/blog/home-items/img1.jpg', alt='')
+              .blog-item-text
+                h3.small-title
+                  a(href='#') Amazing Blog Post One
+                p
+                  | Lorem ipsum dolor sit amet, adipisicing elit. Eos rerum dolorum, est voluptatem modi accusantium perspiciatis ...
+                .blog-one-footer
+                  a(href='#') Read More
+                  a(href='#')
+                    i.icon-heart
+                    |  59 Likes
+                  a(href='#')
+                    i.icon-bubbles
+                    |  120 Comments
+            // Blog Item Wrapper Ends
+          .col-lg-4.col-md-4.col-sm-12.col-xs-12
+            // Blog Item Wrapper Start
+            .blog-item-wrapper
+              .blog-item-img
+                a(href='#')
+                  img(src='assets/img/blog/home-items/img2.jpg', alt='')
+              .blog-item-text
+                h3.small-title
+                  a(href='#') Amazing Blog Post One
+                p
+                  | Lorem ipsum dolor sit amet, adipisicing elit. Eos rerum dolorum, est voluptatem modi accusantium perspiciatis ...
+                .blog-one-footer
+                  a(href='#') Read More
+                  a(href='#')
+                    i.icon-heart
+                    |  59 Likes
+                  a(href='#')
+                    i.icon-bubbles
+                    |  120 Comments
+            // Blog Item Wrapper Ends
+          .col-lg-4.col-md-4.col-sm-12.col-xs-12
+            // Blog Item Wrapper Starts
+            .blog-item-wrapper
+              .blog-item-img
+                a(href='#')
+                  img(src='assets/img/blog/home-items/img3.jpg', alt='')
+              .blog-item-text
+                h3.small-title
+                  a(href='#') Amazing Blog Post One
+                p
+                  | Lorem ipsum dolor sit amet, adipisicing elit. Eos rerum dolorum, est voluptatem modi accusantium perspiciatis ...
+                .blog-one-footer
+                  a(href='#') Read More
+                  a(href='#')
+                    i.icon-heart
+                    |  59 Likes
+                  a(href='#')
+                    i.icon-bubbles
+                    |  120 Comments
+            // Blog Item Wrapper Ends
+        // Row Ends
+      // Container Ends
+    // blog Section End
+    // Clients Section
+    section#clients.section
+      // Container Ends
+      .container
+        h1.section-title.wow.fadeInUpQuick(data-wow-delay='.5s')
+          | Clients
+        p.section-subcontent
+          | At vero eos et accusamus et iusto odio dignissimos ducimus qui
+          br
+          |  blanditiis praesentium
+        .wow.fadeInUpQuick(data-wow-delay='0.3s')
+          // Row and Scroller Wrapper Starts
+          #clients-scroller.row
+            .client-item-wrapper
+              img(src='assets/img/clients/img1.png', alt='')
+            .client-item-wrapper
+              img(src='assets/img/clients/img2.png', alt='')
+            .client-item-wrapper
+              img(src='assets/img/clients/img3.png', alt='')
+            .client-item-wrapper
+              img(src='assets/img/clients/img4.png', alt='')
+            .client-item-wrapper
+              img(src='assets/img/clients/img5.png', alt='')
+            .client-item-wrapper
+              img(src='assets/img/clients/img6.png', alt='')
+          // Row and Scroller Wrapper Starts
+      // Container Ends
+    // Client Section End
+    // Footer Section
+    footer
+      // Container Starts
+      .container
+        // Row Starts
+        .row.section
+          // Footer Widget Starts
+          .footer-widget.col-md-6.col-lg-3.col-xs-12
+            h3.small-title
+              | About Us
+            p
+              | Etiam ornare condimentum massa et scelerisque. Mauris nibh ipsum, laoreet at venenatis ac,
+            ul.mb-3
+              li
+                i.fa.fa-map-marke
+                |  Nash Street , Dearborn, Michigan
+              li
+                i.fa.fa-phone
+                |  +68 313-240-405
+              li
+                i.fa.fa-phone
+                |  +68 32-543-876
+          // Footer Widget Ends
+          // Footer Widget Starts
+          .footer-widget.col-md-6.col-lg-3.col-xs-12
+            h3.small-title
+              | Quick Links
+            ul.menu
+              li
+                a(href='#') About Us
+              li
+                a(href='#') Team
+              li
+                a(href='#') Terms of Service
+              li
+                a(href='#') Sitemap
+              li
+                a(href='#') FAQ
+              li
+                a(href='#') Events
+              li
+                a(href='#') Contact
+              li
+                a(href='#') Blog
+              li
+                a(href='#') Branches
+              li
+                a(href='#') Press Kits
+          // Footer Widget Ends
+          // Footer Widget Starts
+          .footer-widget.col-md-6.col-lg-3.col-xs-12
+            h3.small-title
+              | Popular Posts
+            ul.image-list
+              li
+                figure.overlay
+                  img.img-fluid(src='assets/img/art/a1.jpg', alt='')
+                .post-content
+                  h6.post-title
+                    a(href='blog-single.html') Business Management Tutorials
+                  .meta
+                    span.date 5 Comments
+              li
+                figure.overlay
+                  img.img-fluid(src='assets/img/art/a2.jpg', alt='')
+                .post-content
+                  h6.post-title
+                    a(href='blog-single.html') Top 10 Business Apps and Web Tools
+                  .meta
+                    span.date 2 Comments
+          // Footer Widget Ends
+          // Footer Widget Starts
+          .footer-widget.col-md-6.col-lg-3.col-xs-12
+            h3.small-title
+              | Newsletter
+            form
+              input(type='text', placeholder='Email here')
+              button(type='submit')
+                i.fa.fa-paper-plane-o
+            .flicker-gallery
+              h3.small-title
+                | Instagram
+              a(href='#', title='Pan Masala')
+                img(src='assets/img/flicker/img1.jpg', alt='')
+              a(href='#', title='Sports Template for Joomla')
+                img(src='assets/img/flicker/img2.jpg', alt='')
+              a(href='', title='Apple Keyboard')
+                img(src='assets/img/flicker/img3.jpg', alt='')
+          // Footer Widget Ends
+        // Row Ends
+      // Container Ends
+      // Copyright
+      #copyright
+        .container
+          .row
+            .col-md-6.col-sm-6
+              p.copyright-text
+                | © 2018 Engage All right reserved, Designed by
+                a(href='#') GrayGrids
+            .col-md-6.col-sm-6
+              .social-footer.text-right
+                a(href='#')
+                  i.fa.fa-facebook.icon-round
+                a(href='#')
+                  i.fa.fa-twitter.icon-round
+                a(href='#')
+                  i.fa.fa-linkedin.icon-round
+                a(href='#')
+                  i.fa.fa-google-plus.icon-round
+      // Copyright  End
+    // Footer Section End
+    // Go To Top Link
+    a.back-to-top(href='#')
+      i.fa.fa-angle-up
+    // JavaScript & jQuery Plugins
+    script(src='assets/js/jquery-min.js')
+    script(src='assets/js/popper.min.js')
+    script(src='assets/js/bootstrap.min.js')
+    script(src='assets/js/jquery.mixitup.js')
+    script(src='assets/js/smoothscroll.js')
+    script(src='assets/js/wow.js')
+    script(src='assets/js/owl.carousel.js')
+    script(src='assets/js/waypoints.min.js')
+    script(src='assets/js/jquery.counterup.min.js')
+    script(src='assets/js/jquery.slicknav.js')
+    script(src='assets/js/jquery.appear.js')
+    script(src='assets/js/form-validator.min.js')
+    script(src='assets/js/contact-form-script.min.js')
+    script(src='assets/js/main.js')
+    // Placed at the end of the document so the pages load faster
+    script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js', integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN', crossorigin='anonymous')
+    script.
+      window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\\/script>')
+    script(src='../../../../assets/js/vendor/popper.min.js')
+    script(src='../../../../dist/js/bootstrap.min.js')
+    script(src='../../../../assets/js/vendor/holder.min.js')
