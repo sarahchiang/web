@@ -52,20 +52,87 @@
 <link rel="stylesheet" type="text/css" href="/css/colors/green.css"
 	media="screen" />
 
-<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js">
-    </script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js">
-    </script>
-    <![endif]-->
+
 </head>
 
 <body>
 
 	<!-- Header area wrapper starts -->
 	<header id="header-wrap">
-		<jsp:include page="../navbar.jsp"></jsp:include>
+		
+		<nav class="navbar navbar-expand-md fixed-top scrolling-navbar nav-bg">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display-->
+          <div class="navbar-header"><a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          </div>
+          <div class="collapse navbar-collapse" id="main-menu">
+            <ul class="navbar-nav mr-auto w-100 justify-content-end">
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle active" href="index.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">首頁</a></li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">遊戲說明</a>
+                <div class="dropdown-menu"><a class="dropdown-item" href="about-us.html">認養活動</a><a class="dropdown-item" href="about-us2.html">寵物保健</a><a class="dropdown-item" href="team-page.html">演講座談</a></div>
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="test.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">功能分析</a>
+                <div class="dropdown-menu"><a class="dropdown-item" href="portfolio-col-2.html">新品上市</a><a class="dropdown-item" href="portfolio-col-3.html">好康優惠</a><a class="dropdown-item" href="portfolio-col-4.html">寵物飲食</a><a class="dropdown-item" href="portfolio-col-5.html">寵物用品</a></div>
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">預期困難</a>
+                <div class="dropdown-menu"><a class="dropdown-item" href="accordions.html">旅店簡介</a><a class="dropdown-item" href="tabs.html">房型價格</a><a class="dropdown-item" href="buttons.html">特色設備</a><a class="dropdown-item" href="skills.html">線上訂房</a></div>
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">未來加強</a>
+                <div class="dropdown-menu"><a class="dropdown-item" href="about-us3.html">各區醫院</a><a class="dropdown-item" href="about-us4.html">線上掛號</a><a class="dropdown-item" href="about-us5.html">看診進度查詢</a></div>
+              </li>
+              
+            <form class="form-inline">
+              <div class="top_search_con">
+                <input class="mr-sm-2" type="text" placeholder="站內搜尋 ..."><span class="top_search_icon"><i class="icon-magnifier"></i></span>
+              </div>
+            </form>
+          </div>
+          <!-- Mobile Menu Start-->
+          <ul class="wpb-mobile-menu">
+            <li><a class="active" href="index.html">首頁</a></li>
+            <li><a href="#">最新消息</a>
+              <ul>
+                <li><a href="about-us.html">認養活動</a></li>
+                <li><a href="about-us2.html">寵物保健</a></li>
+                <li><a href="team-page.html">演講座談</a></li>
+              </ul>
+            </li>
+            <li><a href="#">寵物市集</a>
+              <ul>
+                <li><a href="portfolio-col-2.html">新品上市</a></li>
+                <li><a href="portfolio-col-3.html">好康優惠</a></li>
+                <li><a href="portfolio-col-4.html">寵物飲食</a></li>
+                <li><a href="porfolio-item.html">寵物用品</a></li>
+              </ul>
+            </li>
+            <li><a href="#">寵物旅店</a>
+              <ul>
+                <li><a href="accordions.html">旅店簡介</a></li>
+                <li><a href="tabs.html">房型價格</a></li>
+                <li><a href="buttons.html">特色設備</a></li>
+                <li><a href="skills.html">線上訂房</a></li>
+              </ul>
+            </li>
+            <li><a href="#">寵物醫院</a>
+              <ul>
+                <li><a href="about-us.html">各區醫院</a></li>
+                <li><a href="about-us2.html">線上掛號</a></li>
+                <li><a href="team-page.html">看診進度查詢</a></li>
+              </ul>
+            </li>
+            <li><a href="#">部落格分享</a>
+              <ul>
+                <li><a href="sidebar-right.html">本周最新</a></li>
+                <li><a href="sidebar-left.html">熱門文章</a></li>
+                <li><a href="sidebar-full.html">精選圖文</a></li>
+              </ul>
+            </li>
+            <li><a href="#">會員登入/註冊</a></li>
+          </ul>
+          <!-- Mobile Menu End-->
+        </div>
+      </nav>
 	</header>
 	<!-- Header-wrap Section End -->
 
@@ -81,21 +148,7 @@
  			</div>
 		</div>
 	</div>
-<!-- 	<div class="container"> -->
-<!-- 	<section class="featured-wrapper" style='padding-top:50px'> -->
-<!-- 	              <div id="carousel-image-slider" class="owl-carousel"> -->
-<!-- 	                <div class="item"> -->
-<!-- 	                  <img src="/images/shopping/product/107.jpg" alt=""> -->
-<!-- 	                </div> -->
-<!-- 	                <div class="item"> -->
-<!-- 	                  <img src="/images/shopping/product/108.jpg" alt=""> -->
-<!-- 	                </div> -->
-<!-- 	                <div class="item"> -->
-<!-- 	                  <img src="/images/shopping/product/109.jpg" alt=""> -->
-<!-- 	                </div> -->
-<!-- 	              </div> -->
-<!-- 	            </section> -->
-<!-- 	 </div> -->
+	
 	<!-- Page Header End -->
 
 	<!-- End of call to action section -->
@@ -125,7 +178,7 @@
 								<ul class="category-menu">
 									<c:forEach var="classify" items="${classifies}">
 										<li class="page-item">
-											<a class="text-info" href='<spring:url value="/products/${classify.id}"></spring:url>'><span class="font-weight-bold">${classify.name}</span></a>
+											<a class="text-info" href='<spring:url value="/products/${classify.id}"></spring:url>'><span class="font-weight-bold"></span></a>
 										</li>
 									</c:forEach>
 								</ul>
@@ -153,7 +206,7 @@
 				</c:if>
 				<c:if test="${page != null || page.numberOfElements > 0}">
 				<div class="col-md-9">
-				<ul class="pagination"><li class="page-item active"><p class="page-link animated lightSpeedIn">商品資料共有  筆</p></li></ul>
+				<ul class="pagination"><li class="page-item active"><p class="page-link animated lightSpeedIn">商品資料共有 X 筆</p></li></ul>
 					<div class="row" style="box-shadow:0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)">
 						<c:forEach var="product" items="${page.content}">
 							<div class="col-md-4">
@@ -164,7 +217,7 @@
 									<div class="card-body fadeIn" style="margin-bottom: 5px">
 											<p class="text-success">商品名稱：</p>
 											<p class="text-primary">價格：<br>庫存：</p>
-<%-- 											<p class="text-primary">製造日期：<br>保存期限：</p> --%>
+ 											<p class="text-primary">製造日期：<br>保存期限：</p>
 											<p class="text-primary">上架日期：<br>商品類別：</p>
 									</div>
 									<div class="card">
