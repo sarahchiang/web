@@ -235,7 +235,9 @@ template {
   h3 {
     page-break-after: avoid; }
   .navbar {
-    display: none; }
+    display: none;
+    
+     }
   .badge {
     border: 1px solid #000; }
   .table {
