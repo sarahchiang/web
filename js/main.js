@@ -21,4 +21,4 @@ function turnImgs(imgs) {
     }
   }
   //设置轮播间隔
-setInterval(turnImgs, 3000);
+setInterval(turnImgs, 250);
