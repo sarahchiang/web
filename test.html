@@ -49,10 +49,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
 
 <!-- Color CSS Styles  -->
-<link rel="stylesheet" type="text/css" href="/css/colors/green.css"
-	media="screen" />
-
-
+<link rel="stylesheet" type="text/css" href="assets/css/colors/red.css" media="screen">
 
 </head>
 
@@ -70,18 +67,18 @@
           <div class="collapse navbar-collapse" id="main-menu">
             <ul class="navbar-nav mr-auto w-100 justify-content-end">
               <li class="nav-item dropdown">
-              	<a class="nav-link dropdown-toggle active" href="index.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              		首頁|
+              	<a class="nav-link dropdown-toggle " href="index.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              		首頁
               	</a>
           	  </li>
               <li class="nav-item dropdown">
-              	<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              		遊戲說明|
+              	<a class="nav-link dropdown-toggle active" href="遊戲說明.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              		遊戲說明
               	</a>
           	  </li>
               <li class="nav-item dropdown">
-              	<a class="nav-link dropdown-toggle" href="test.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              		功能分析|
+              	<a class="nav-link dropdown-toggle" href="功能分析.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              		功能分析
               	</a>
 	                <div class="dropdown-menu">
 	                	<a class="dropdown-item" href="portfolio-col-2.html">玩家</a>
@@ -92,13 +89,13 @@
 	                </div>
               </li>
               <li class="nav-item dropdown">
-              	<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              		預期困難|
+              	<a class="nav-link dropdown-toggle" href="預期困難.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              		預期困難
               	</a>
               </li>
               <li class="nav-item dropdown">
-              	<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              		未來加強|
+              	<a class="nav-link dropdown-toggle" href="未來加強.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              		未來加強
               	</a>
               </li>
               
@@ -125,64 +122,44 @@
 	</header>
 	<!-- Header-wrap Section End -->
 
-	<!-- Page Header -->
-	<div class="page-header-section" style="height: 15px;">
-		<div class="container">
-			<div class="row">
-				<div class="page-header-area">
-					<div class="page-header-content">
-						<h2>測試分頁</h2>
-					</div>
-				</div>
- 			</div>
-		</div>
-	</div>
-	<div class="container">
-			
-	           <img src="/images/擷取2.jpg" alt="">
-	        </div>
-	</div>
-	
-	<!-- Page Header End -->
-
-
-
 	<!-- Classic Blog Section -->
-	<section class="classic-blog-section section" style="padding-top: 25px">
-		<div class="container" >
-							<div class="col-md-4" >
-								<div class="card mb-3 box-shadow" style="width: 1000px">
-<!-- 									<img class="card-img-top" src="/images/shopping/product/pd1.jpg" -->
-									<img class="card-img-top" src="${product.images}" width="100px" alt="商品列表">
-									<div class="card-body fadeIn" style="margin-bottom: 5px">
-											<p class="text-success">商品名稱：</p>
-											<p class="text-primary">價格：<br>庫存：</p>
- 											<p class="text-primary">製造日期：<br>保存期限：</p>
-											<p class="text-primary">上架日期：<br>商品類別：</p>
-									</div>
-									<div class="card">
-										<a href="<spring:url value='/selectOneProduct?id=${product.id}'/>"
-											class="btn btn-common">商品詳情
-										</a>
-									</div>
-								</div>
-							</div>
-						
-					</div>
-						<div class="container" style="padding-top:20px">
-						  <div class="row justify-content-md-center">
-						    <div class="col-md-auto">
-						      <div class="blog-pagination clearfix wow fadeIn" data-wow-delay="0.3s">
-								
-							  </div>
-						    </div>
-						  </div>
-						</div>
-					</div>
-				</c:if>
-			</div>
-		</div>
-	</section>
+	<section class="classic-blog-section section" style="padding-top: 100px;background:url(/images/背景.JPG);"">
+    <div class="container" >
+              
+                <div class="card mb-3 box-shadow" style="width: 1100px" >
+                  <div class="card-body fadeIn" style="margin-bottom: 5px" align="center">
+                      <p class="text-primary">遊戲畫面:
+                        <div class="container">
+                                <img src="/images/圖片3.jpg" alt=""  width="574px">
+                            </div>
+                      </p>
+                      <p class="text-primary">價格：<br>庫存：</p>
+                      <p class="text-primary">製造日期：<br>保存期限：</p>
+                      <p class="text-primary">上架日期：<br>商品類別：</p>
+                  </div>
+                  <div class="card">
+                    <a href="<spring:url value='/selectOneProduct?id=${product.id}'/>"
+                      class="btn btn-common">商品詳情
+                    </a>
+                  </div>
+                </div>
+              
+            
+          </div>
+            <div class="container" style="padding-top:20px">
+              <div class="row justify-content-md-center">
+                <div class="col-md-auto">
+                  <div class="blog-pagination clearfix wow fadeIn" data-wow-delay="0.3s">
+                
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </c:if>
+      </div>
+    </div>
+  </section>
 
 	<!-- Footer Section -->
 	<footer>
